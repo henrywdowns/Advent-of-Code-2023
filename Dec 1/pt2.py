@@ -1,14 +1,10 @@
 import re
 
-input_arr = []
 digits = ['1','2','3','4','5','6','7','8','9','0']
 number_names = ['one','two','three','four','five','six','seven','eight','nine','zero']
 
 with open('input.txt','r') as input_doc:
-    lines = input_doc.readlines()
-
-for line in lines:
-    input_arr.append(line)
+    input_arr = input_doc.readlines()
 
 def all_first_and_last(input_list):
     keylist = []
