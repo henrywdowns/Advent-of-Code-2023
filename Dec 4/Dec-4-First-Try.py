@@ -50,7 +50,7 @@ def read_cards(input):
                 print(f'Found winning number!')
                 match_list.append(winning_num)
                 #card_matches +=1
-        card_matches += len(set(match_list))
+        card_matches += len(match_list)
         print(f'Card matches: {card_matches}')
         print(f'Matching numbers: {match_list}')
         running_total += card_scorer(card_matches)
